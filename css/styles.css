@@ -147,6 +147,7 @@ a {
   padding-bottom: 24px;
   font-weight: 500;
   color: var(--main-text-color);
+  transition: var(--transition);
 }
 
 
@@ -162,8 +163,6 @@ a {
 .site-nav-link:focus,
 .site-nav-link:hover {
   color: var(--accent-color);
-  transition: var(--transition);
-  
 }
 
 .contacts {
@@ -175,12 +174,12 @@ a {
 .contact-link {
   font-style: normal;
   color: var(--text-color);
+  transition: var(--transition);
 }
 
 .contact-link:focus,
 .contact-link:hover {
   color: var(--accent-color);
-  transition: var(--transition);
 }
 
 /* hero image */
@@ -229,12 +228,12 @@ a {
   color: var(--background-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  transition: var(--transition);
 }
 
  .button-hero:hover,
  .button-hero:focus {
   background: var(--button-hover-color);
-  transition: var(--transition);
 }
 
 /* Section 1 */
@@ -364,8 +363,8 @@ img {
 
 .social-icon {
   fill: var(--background-color);
-  width: 24px;
-  height: 24px;
+  /* width: 16px;
+  height: 16px; */
 }
 .social-link {
   display: flex;
@@ -375,11 +374,11 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition: var(--transition);
 }
 .social-link:hover,
 .social-link:focus {
   background: var(--button-hover-color);
-  transition: var(--transition);
 }
 
 .footer-link {
@@ -389,13 +388,13 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--background-icon-hover);
-  transition: var(--transition);
 }
 
 .footer-link {
   width: 24px;
   height: 24px;
   fill: var(--background-color);
+  transition: var(--transition);
 }
 
 /* Customers */
@@ -434,19 +433,20 @@ img {
   border-radius: 4px;
   color: var(--border-icon-color);
   border: 1px solid var(--border-icon-color);
+  transition: var(--transition);
 }
 
 .customer-logo {
   fill: currentColor;
-  width: 104;
-  height: 56;
+  /* width: 104px;
+  height: 56px; */
 }
 
 .customer-link:hover,
 .customer-link:focus {
   border: 1px solid var(--button-hover-color);
   color: var(--button-hover-color);
-  transition: var(--transition);
+  
 }
 
 /* footer */
@@ -501,12 +501,12 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--background-color);
+  transition: var(--transition);
 }
 
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--background-icon-hover);
-  transition: var(--transition);
 }
 
 .footer-link {
@@ -525,7 +525,6 @@ img {
  height: 100%;
  background-color: rgba(46, 47, 66, 0.4);
  z-index: 1;
- 
  transition: opacity var(--transition), visibility var(--transition); 
 }
 .modal {
@@ -565,24 +564,17 @@ img {
   width: 24px;
   height: 24px;
   padding: 0;
-
+  transition: var(--transition);
 }
 
-
-
-
-
 .modal-button:hover,
-.modal-button:focus {
- 
+.modal-button:focus { 
   background-color: var(--accent-color);
-  transition: var(--transition);
 }
 
 .modal-button:hover,
 .modal-button:focus {
   fill: var(--background-color);
-  transition: var(--transition);
 }
 
 .icon-modal-button {
@@ -621,6 +613,7 @@ img {
   color: var(--accent-color);
   background-color: var(--light-background-color);
   cursor: pointer;
+  transition: var(--transition);
 }
 
 .filter-btn:hover,
@@ -630,7 +623,6 @@ img {
   border-radius: 4px;
   color: var(--background-color);
   background-color: var(--accent-color);
-  transition: var(--transition);
 }
 /* =========================================================== */
 
@@ -645,19 +637,18 @@ img {
   flex-basis: calc(
     (100% - (var(--indent) * (var(--items-portfolio) - 1))) /
       var(--items-portfolio));
+  transition: var(--transition);    
 }
 
 .project-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, .08),
     0px 1px 1px rgba(46, 47, 66, .16),
     0px 2px 1px rgba(46, 47, 66, .08);
-    transition: var(--transition);
 }
 
 
 .item-box:hover .box-overlay {
   display: block;
-  transition: var(--transition);
   transform: translatey(0)
   }
 /* 
@@ -686,6 +677,7 @@ img {
   display: none; 
   transform: translatey(100%);
   display: flex;
+  transition: var(--transition);
 }
 
 .overlay-text {
